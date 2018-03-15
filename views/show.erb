@@ -1,0 +1,19 @@
+    <div class="container">
+      <div class="row">
+        <% @detail[1].each do |x| %>
+          <div class="card bg-dark text-white">
+            <img class="card-img" src="/picture/<%= @detail[0] %>/<%= x %>" alt="Card image">
+            <div class="card-img-overlay">
+              <h5 class="card-title">時刻：<%= x %></h5>
+              <p class="card-text"></p>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        <% end %>
+      </div>
+      <br />
+      <div class="row">
+        <a class="btn btn-secondary btn-lg btn-block" href="../">戻る</a>
+      </div>
+      <br />
+    </div>
